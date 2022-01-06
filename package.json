@@ -37,11 +37,6 @@
     },
     "rules": {}
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
   "_id": "inovola-front-end-task@0.1.0",
   "readme": "ERROR: No README data found!"
 }
