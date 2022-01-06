@@ -1,0 +1,141 @@
+.off_canvas_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  cursor: crosshair;
+  background: #232323;
+  top: 0;
+  transition: all linear 0.1s;
+
+  &.active {
+    opacity: .5;
+    visibility: visible;
+  }
+}
+
+
+.offcanvas_menu {
+  display: none;
+  @media #{$md} {
+    display: block;
+  }
+  @media #{$xs} {
+    display: block;
+  }
+}
+
+
+.offcanvas_menu_wrapper {
+  width: 290px;
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+  top: 0;
+
+  height: 100vh;
+  transition: .2s;
+  left: 0;
+  margin-left: -300px;
+  padding: 50px 15px 30px;
+  overflow-y: visible;
+
+  &.active {
+    margin-left: 0;
+  }
+}
+
+.header {
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  &.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1010;
+    background-color: $white;
+    box-shadow: 0 15px 30px 0 #0000000f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: sticky .5s;
+  }
+}
+
+
+
+
+.offcanvas-brand img {
+  height: 35px;
+}
+
+.header-nav-box {
+  .logo-box img {
+    height: 35px;
+  }
+
+  & .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media #{$md} {
+      padding-right: 50px;
+    }
+    @media #{$xs} {
+      padding-right: 30px;
+    }
+  }
+}
+
+
+.header-main-menu {
+  @media #{$md} {
+    display: none;
+  }
+  @media #{$xs} {
+    display: none;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    & > li {
+      display: inline-block;
+      margin-right: 30px;
+      position: relative;
+      @media #{$lg} {
+        margin-right: 14px;
+      }
+
+      & > a {
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+        line-height: 45px;
+
+        & i {
+
+          padding-left: 6px;
+        }
+      }
+
+      &:hover {
+        & .sub-menu {
+          opacity: 1;
+          visibility: visible;
+          top: 100%;
+        }
+      }
+    }
+  }
+}

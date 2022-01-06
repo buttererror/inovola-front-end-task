@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "LandingHeader"
 }
 </script>
 

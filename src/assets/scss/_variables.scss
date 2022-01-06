@@ -1,0 +1,25 @@
+// font families
+
+$cairo: 'Cairo', sans-serif;
+
+// font weights
+
+$light-weight: 400;
+$regular-weight: 600;
+$bold-weight: 600;
+
+// colors
+
+$white: #ffffff;
+$black: #000000;
+$theme-color: #825b98;
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lgg : 'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xxs:'(max-width: 575px)';
+

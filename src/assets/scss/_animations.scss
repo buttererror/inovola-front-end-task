@@ -1,0 +1,19 @@
+@-webkit-keyframes sticky {
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
