@@ -4,9 +4,10 @@
 
 <script>
 import Landing from "./pages/Landing";
+
 export default {
   name: "App",
-  components: { Landing },
+  components: {Landing},
 };
 </script>
 
